@@ -1,34 +1,45 @@
 {
-  "author": "Patrick Mooney",
-  "contributors": [
+  "originalAuthor": "Patrick Mooney",
+  "originalContributors": [
     "Mark Cavage <mcavage@gmail.com>",
     "Cody Peter Mello <cody.mello@joyent.com>"
   ],
-  "name": "ldap-filter",
-  "homepage": "http://ldapjs.org",
+  "name": "@ldapjs/filter",
+  "homepage": "https://github.com/ldapjs/filter",
   "description": "API for handling LDAP-style filters",
   "version": "0.3.3",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pfmooney/node-ldap-filter.git"
+    "url": "git@github.com:ldapjs/filter.git"
   },
   "main": "lib/index.js",
   "directories": {
     "lib": "./lib"
   },
-  "engines": {
-    "node": ">=0.8"
-  },
   "dependencies": {
     "assert-plus": "^1.0.0"
   },
   "devDependencies": {
-    "faucet": "0.0.1",
-    "istanbul": "^0.4.0",
-    "tape": "^4.2.2"
+    "@fastify/pre-commit": "^2.0.2",
+    "eslint": "^8.17.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "tap": "^16.2.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/istanbul cover --print none test/run.js | ./node_modules/.bin/faucet"
-  }
+    "lint": "eslint .",
+    "lint:ci": "eslint .",
+    "test": "tap --no-coverage-report",
+    "test:cov": "tap",
+    "test:cov:html": "tap --coverage-report=html",
+    "test:watch": "tap -w --no-coverage-report"
+  },
+  "precommit": [
+    "lint",
+    "test"
+  ]
 }

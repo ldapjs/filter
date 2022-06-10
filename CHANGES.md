@@ -1,4 +1,8 @@
-# ldap-filter Changelog
+# ldap-filter
+
+> ### Important
+> This file is no longer maintained. For changes, please read
+> the releases page: https://github.com/ldapjs/filter/releases
 
 ## 0.3.3
 
