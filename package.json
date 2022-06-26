@@ -7,7 +7,7 @@
   "name": "@ldapjs/filter",
   "homepage": "https://github.com/ldapjs/filter",
   "description": "API for handling LDAP-style filters",
-  "version": "1.0.0-rc.10",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "@ldapjs/asn1": "1.2.0-rc.3",
+    "@ldapjs/asn1": "1.2.0",
     "@ldapjs/protocol": "^1.1.0",
     "process-warning": "^2.0.0"
   },
