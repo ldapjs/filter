@@ -18,7 +18,7 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "@ldapjs/asn1": "1.2.0-rc.2",
+    "@ldapjs/asn1": "1.2.0-rc.3",
     "@ldapjs/protocol": "^1.1.0",
     "process-warning": "^2.0.0"
   },
