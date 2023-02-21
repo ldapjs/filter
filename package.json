@@ -7,7 +7,7 @@
   "name": "@ldapjs/filter",
   "homepage": "https://github.com/ldapjs/filter",
   "description": "API for handling LDAP-style filters",
-  "version": "2.0.0-rc.3",
+  "version": "2.0.0-rc.4",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -18,12 +18,13 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "@ldapjs/asn1": "2.0.0-rc.3",
+    "@ldapjs/asn1": "2.0.0-rc.4",
     "@ldapjs/protocol": "^1.2.1",
     "process-warning": "^2.1.0"
   },
   "devDependencies": {
     "@fastify/pre-commit": "^2.0.2",
+    "@ldapjs/attribute": "1.0.0-rc.5",
     "eslint": "^8.34.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
